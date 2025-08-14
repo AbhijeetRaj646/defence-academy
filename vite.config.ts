@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/defence-academy/', // 👈 This is important
+  base: '/defence-academy/', // 👈 
 })
