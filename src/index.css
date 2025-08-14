@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --deep-saffron: #FF9933;
+  --india-green: #138808;
+  --navy-blue: #000080;
+  --white: #FFFFFF;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.tricolor-ribbon {
+  background: linear-gradient(to right, var(--deep-saffron) 33.33%, var(--white) 33.33%, var(--white) 66.66%, var(--india-green) 66.66%);
+  height: 4px;
+}
+
+.bg-gradient-patriot {
+  background: linear-gradient(135deg, var(--deep-saffron) 0%, var(--navy-blue) 100%);
+}
+
+.text-deep-saffron {
+  color: var(--deep-saffron);
+}
+
+.text-india-green {
+  color: var(--india-green);
+}
+
+.text-navy-blue {
+  color: var(--navy-blue);
+}
+
+.bg-deep-saffron {
+  background-color: var(--deep-saffron);
+}
+
+.bg-india-green {
+  background-color: var(--india-green);
+}
+
+.bg-navy-blue {
+  background-color: var(--navy-blue);
+}
+
+.border-deep-saffron {
+  border-color: var(--deep-saffron);
+}
+
+.border-india-green {
+  border-color: var(--india-green);
+}
+
+.border-navy-blue {
+  border-color: var(--navy-blue);
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
